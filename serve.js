@@ -10,7 +10,7 @@ console.log(' data e hora: ${new date().toiSOString()}')
 
 res.statusCode = 201
 res.setHeader('Content-Type', 'application/json');
-res.end(JSON.stringfy({"status": "ok"}));
+//sem o res.end trava o navegador
 });
 
 server.listen(porta, ()=> {
